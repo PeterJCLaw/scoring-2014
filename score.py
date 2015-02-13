@@ -16,4 +16,5 @@ import libproton
 def score(teams_data):
     return Scorer(teams_data).calculate_scores()
 
-libproton.main(score)
+if __name__ == '__main__':
+    libproton.main(score)
