@@ -11,6 +11,9 @@ class Scorer:
             scores[tla] = score_team(score_data)
         return scores
 
+    # No validation method since there's nothing extra we'd expect and
+    # we already do validation during the score calculation.
+
     @property
     def isolated_scores(self):
         """
